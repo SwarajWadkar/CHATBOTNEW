@@ -1,0 +1,54 @@
+Project Title: College Information ChatBot (Java + Swing)
+
+Overview:
+This is a desktop-based chatbot application built using Java Swing. It is designed to provide automated responses to common queries related to the MCA (Master of Computer Applications) program of a college. The chatbot mimics a text-based conversation and gives predefined responses based on keywords entered by the user.
+
+
+Features:
+
+Simple graphical user interface using Java Swing
+Chat window with user input and bot responses
+Responds to over 25 predefined college-related questions
+Displays the current date on request
+Provides Google search fallback for unknown questions
+Clears the chat screen on user command
+Help command shows list of supported queries
+Neon green on black theme for terminal-like appearance
+Responsive "Send" button with hover effect
+
+
+Technologies Used:
+Java
+Java Swing (JFrame, JTextArea, JTextField, JButton, JScrollPane)
+java.time.LocalDate for date management
+java.util.Random for random greetings and responses
+java.net.URI and Desktop class for fallback web search
+
+
+How it works:
+The user enters a query in the input field and clicks "Send" or presses Enter.
+The chatbot checks the message for specific keywords.
+If a keyword matches a predefined topic (e.g., fees, placements, timings), the bot responds with a stored answer.
+If the query doesn't match any known topic, the bot opens the default browser and performs a Google search using the user’s input.
+The user can type 'help' to get a list of supported topics.
+Typing 'clear' will reset the chat area.
+
+
+Example questions the chatbot can answer:
+What are the fees for the MCA course?
+What is the timing for MCA?
+What is the duration of the MCA program?
+How are the placements for MCA?
+Which companies come for placement?
+What is the highest package offered?
+Does the college provide internships?
+What workshops are conducted?
+
+
+How to Run:
+
+Open a terminal or IDE.
+
+Compile the file using:---->  javac ChatBot.java
+
+Run the program using:---->   java ChatBot
